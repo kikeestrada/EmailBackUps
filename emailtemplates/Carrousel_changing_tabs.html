@@ -1,0 +1,316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<!--<meta name="viewport" content="width=320, initial-scale=0.29">-->
+<!--<meta name="viewport" content="width=1024">-->
+
+<title>Carrousel Tabs</title>
+<style type="text/css">
+body {
+	width: 100%!important;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	margin: 0;
+	padding: 0;
+}
+.ReadMsgBody {
+	width: 100%;
+}
+.ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td {
+	line-height: 100%
+}
+table {
+	border-collapse: collapse;
+	mso-table-lspace: 0pt;
+	mso-table-rspace: 0pt;
+	padding: 0;
+}
+table td {
+	border-collapse: collapse;
+}
+p {
+	margin: 0 auto;
+	text-align: center;
+}
+.appleLinks a {
+	color: #000000!important;
+	text-decoration: none!important;
+}
+label {
+	display: block;
+	float: left;
+	text-align: center;
+	color: #ffffff;
+	background-color: #000000;
+	padding-top: 0px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px!important;
+}
+
+/*Media iPhone & Regular mobile size 320*/	
+@media only screen and (max-width: 480px) {
+p {
+	color: green;
+}
+*[class=contenttable] {
+	width: 320px!important;
+}
+*[class=contenttable2] {
+	width: 280px!important;
+}
+*[class=mobile] {
+	width: 320px!important;
+	height: auto!important;
+}
+*[class=mobile1] {
+	width: 257px!important;
+	height: auto!important;
+}
+*[class=mobile2] {
+	width: 63px!important;
+	height: auto!important;
+}
+*[class=hide] {
+	display: none!important;
+}
+*[class=block] {
+	display: block!important;
+}
+*[class=blocktable] {
+	display: block!important;
+	width: 320px!important;
+}
+*[class=divider] {
+	width: 320px!important;
+}
+*[class=font_gray] {
+	color: gray;
+}
+*[class=showmobile] {
+	display: block!important;
+	margin: auto!important;
+	width: 320px!important;
+	height: auto!important;
+	max-height: inherit!important;
+	overflow: visible!important;
+}
+*[class=btnCarrousel2] {
+	width: 56px!important;
+	height: 74px!important;
+}
+*[class=btnCarrousel3] {
+	width: 77px!important;
+	height: 74px!important;
+}
+*[class=btnCarrousel4] {
+	width: 76px!important;
+	height: 74px!important;
+}
+*[class=fontResize] {
+	font-size: 13px!important;
+	line-height: 20px!important;
+}
+*[class=fontResize2] {
+	font-size: 21px!important;
+}
+*[class=spacerCenter] {
+	width: 48px!important;
+	height: 1px!important;
+}
+*[class=spacerCenter2] {
+	width: 20px!important;
+	height: 1px!important;
+}
+}
+
+@media yahoo {
+.yahootest {
+	width: 200px!important;
+	border: 1px solid red!important;
+	display: block!important;
+}
+}
+
+
+/*----Carrousel----*/
+
+input {
+	display: none;
+}
+.tab {
+	text-align: center;
+	display: none;
+	clear: both;
+	background:#ededed;
+}
+#tab1:checked ~ .tab1, #tab2:checked ~ .tab2, #tab3:checked ~ .tab3, #tab4:checked ~ .tab4 {
+	display: block;
+}
+/*tab1:checked Display none*/
+#tab1:checked ~ .showmobile #btn1 img.tap_to_hide {
+	display: none!important;
+}
+/*tab1:checked others Display Block*/	
+#tab1:checked ~ .showmobile #btn1 img.tap_to_show {
+	display: block!important;
+}
+#tab1:checked ~ .showmobile #btn2 img.tap_to_show {
+	display: none!important;
+}
+#tab1:checked ~ .showmobile #btn3 img.tap_to_show {
+	display: none!important;
+}
+#tab1:checked ~ .showmobile #btn4 img.tap_to_show {
+	display: none!important;
+}
+
+/*tab2:checked Display none*/
+#tab2:checked ~ .showmobile #btn2 img.tap_to_hide {
+	display: none!important;
+}
+/*tab2:checked others Display Block*/
+#tab2:checked ~ .showmobile #btn2 img.tap_to_show {
+	display: block!important;
+}
+#tab2:checked ~ .showmobile #btn1 img.tap_to_show {
+	display: none!important;
+}
+#tab2:checked ~ .showmobile #btn3 img.tap_to_show {
+	display: none!important;
+}
+#tab2:checked ~ .showmobile #btn4 img.tap_to_show {
+	display: none!important;
+}
+/*tab3:checked Display none*/
+#tab3:checked ~ .showmobile #btn3 img.tap_to_hide {
+	display: none!important;
+}
+/*tab3:checked others Display Block*/
+#tab3:checked ~ .showmobile #btn3 img.tap_to_show {
+	display: block!important;
+}
+#tab3:checked ~ .showmobile #btn1 img.tap_to_show {
+	display: none!important;
+}
+#tab3:checked ~ .showmobile #btn2 img.tap_to_show {
+	display: none!important;
+}
+#tab3:checked ~ .showmobile #btn4 img.tap_to_show {
+	display: none!important;
+}
+/*tab4:checked Display none*/
+#tab4:checked ~ .showmobile #btn4 img.tap_to_hide {
+	display: none!important;
+}
+/*tab4:checked others Display Block*/
+#tab4:checked ~ .showmobile #btn4 img.tap_to_show {
+	display: block!important;
+}
+#tab4:checked ~ .showmobile #btn1 img.tap_to_show {
+	display: none!important;
+}
+#tab4:checked ~ .showmobile #btn2 img.tap_to_show {
+	display: none!important;
+}
+#tab4:checked ~ .showmobile #btn3 img.tap_to_show {
+	display: none!important;
+}
+.tap_to_show {
+	width: 56px!important;
+	height: 74px!important;
+}
+.tap_to_hide {
+	width: 56px!important;
+	height: 74px!important;
+}
+
+/*----Carrousel Ends Here----*/
+
+</style>
+</head>
+
+<body bgcolor="#f5f6f6"  style="margin:0 auto; padding:0; text-align:center;">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f5f6f6" class="contenttable" align="center">
+  <tbody>
+    <tr>
+      <td width="640" align="center">
+               <table style="max-width:600px;" cellpadding="0" 
+cellspacing="0" width="600" align="center" border="0" class="hide">
+                              <tbody>
+                                <tr>
+                                  <td valign="top" width="600" align="center"><a 
+href="#" target=""><img 
+src="http://ctmanager.ninja/test/edk/carrouseltab.jpg" 
+alt="Hero image" width="414" height="250" style="display: block; " 
+border="0"></a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+              <!--Mobile Version Carrousel--> 
+              <!--[if !mso]><!-->
+              
+              <div style="display:none; width:0px; max-height:0px; overflow:hidden;" class="showmobile">
+                <table width="320" border="0" align="center" cellpadding="0" cellspacing="0" class="showmobile" style="margin: 0 auto; display: none; border: 0; max-height:0px; overflow:hidden;">
+                  <tr>
+                    <td valign="top" align="center"><input type="radio" name="tabs" id="tab1" checked>
+                      <input type="radio" name="tabs" id="tab2">
+                      <input type="radio" name="tabs" id="tab3">
+                      <input type="radio" name="tabs" id="tab4">
+                      <table border="0" cellspacing="0" cellpadding="0" class="showmobile" align="center" bgcolor="#ededed">
+                        <tr>
+                          <td><img src="http://f.e.starbucks.com/i/52/163466415/080213-sbux-summer2-week8-d1-space.gif" width="70" height="150" border="0" style="display:block;" class="spacerCenter"></td>
+                          <td align="center"><div style="display:block; margin:0 auto;">
+                              <label for="tab1" id="btn1"> <img src="http://ctmanager.ninja/test/edk/carrousel_tab1.jpg" alt="" width="56" height="74" style="display:block;" border="0" class="tap_to_show" /> <img src="http://ctmanager.ninja/test/edk/carrousel_off.jpg" alt="" width="56" height="74" style="display:block;" border="0" class="tap_to_hide" /> </label>
+                              <label for="tab2" id="btn2"> <img src="http://ctmanager.ninja/test/edk/carrousel_tab2.jpg" alt="" width="56" height="74" style="display:block;" border="0" class="tap_to_show" /> <img src="http://ctmanager.ninja/test/edk/carrousel_off.jpg" alt="" width="56" height="74" style="display:block;" border="0" class="tap_to_hide" /> </label>
+                              <label for="tab3" id="btn3"> <img src="http://ctmanager.ninja/test/edk/carrousel_tab3.jpg" alt="" width="56" height="74" style="display:block;" border="0" class="tap_to_show" /> <img src="http://ctmanager.ninja/test/edk/carrousel_off.jpg" alt="" width="56" height="74" style="display:block;" border="0" class="tap_to_hide"> </label>
+                              <label for="tab4" id="btn4"> <img src="http://ctmanager.ninja/test/edk/carrousel_tab4.jpg" alt="" width="56" height="74" style="display:block;" border="0" class="tap_to_show" /> <img src="http://ctmanager.ninja/test/edk/carrousel_off.jpg" alt="" width="56" height="74" style="display:block;" border="0" class="tap_to_hide"> </label>
+                            </div></td>
+                          <td><img src="http://f.e.starbucks.com/i/52/163466415/080213-sbux-summer2-week8-d1-space.gif" width="70" height="150" border="0" style="display:block;" class="spacerCenter"></td>
+                        </tr>
+                      </table>
+                      <table border="0" cellspacing="0" cellpadding="0" class="showmobile" bgcolor="#666666">
+                        <tr>
+                          <td height="1"></td>
+                        </tr>
+                      </table>
+                      <div class="tab tab1"><a href="#"><img src="http://ctmanager.ninja/test/edk/main_tab1.jpg" alt="" width="414" height="250" style="display:block;" border="0" class="mobile"></a><br />
+<br />
+<font face="Arial, Helvetica, sans-serif" style="color:#666666; font-size:17px; line-height:22px">HEADLINE</font><br /><br />
+<font face="Arial, Helvetica, sans-serif" style="color:#666666; font-size:12px; line-height:19px">Sometimes luck does grow on trees.<br />
+When players got a Mochanut, they also <br /> won Starbucks for Life. </font><br /><br />
+</div>
+                      <div class="tab tab2"><a href="#"><img src="http://ctmanager.ninja/test/edk/main_tab2.jpg" alt="" width="414" height="250" style="display:block;" border="0" class="mobile"></a><br />
+<br />
+<font face="Arial, Helvetica, sans-serif" style="color:#666666; font-size:17px; line-height:22px">HEADLINE 2</font><br /><br />
+<font face="Arial, Helvetica, sans-serif" style="color:#666666; font-size:12px; line-height:19px">These summer Starflies were definitely <br />
+worth catching they rewarded game <br />players with Starbucks for a Year.</font><br /><br /></div>
+                      <div class="tab tab3"><a href="#"><img src="http://ctmanager.ninja/test/edk/main_tab3.jpg" alt="" width="414" height="250" style="display:block;" border="0" class="mobile"></a><br />
+<br />
+<font face="Arial, Helvetica, sans-serif" style="color:#666666; font-size:17px; line-height:22px">HEADLINE 3</font><br /><br />
+<font face="Arial, Helvetica, sans-serif" style="color:#666666; font-size:12px; line-height:19px">Players who found Little Boom heard a <br />
+very sweet sound the news that they won <br /> Starbucks for a Month.</font><br /><br /></div>
+                      <div class="tab tab4"><a href="#"><img src="http://ctmanager.ninja/test/edk/main_tab4.jpg" alt="" width="414" height="250" style="display:block;" border="0" class="mobile"></a><br />
+<br />
+<font face="Arial, Helvetica, sans-serif" style="color:#666666; font-size:17px; line-height:22px">HEADLINE 4</font><br /><br />
+<font face="Arial, Helvetica, sans-serif" style="color:#666666; font-size:12px; line-height:19px">The Cold Brew Cooler included an extra <br />
+treat winning Starbucks for a Week. </font><br /><br /></div></td>
+                  </tr>
+                </table>
+              </div>
+              
+              <!--<![endif]--> 
+              <!--End Mobile Version-->
+              </td>
+          </tr>
+        </table>
+        </td>
+          </tr>
+        </table>
+
+        
+      
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+
+    <style type="text/css">
+body{width:100%;}
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, font, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td {
+          margin: 0;
+          padding: 0;
+          border: 0;
+          outline: 0;
+          font-weight: inherit;
+          font-style: inherit;
+          font-size: 100%;
+          font-family: inherit;
+          vertical-align: baseline;
+        }
+
+        
+		.wrapper{font-family:arial,helvetica,sans-serif;font-size:100%;margin: 0 auto;max-width:100%;}
+		.header{width:100%; height:100px; background-color:#ffffff; text-align:center; }
+		.Hcontent{ width:70%; height:95px; margin: 0 auto; background-color:#ffffff}
+		.logo{float:left; width:26.5%; }
+		.contact{float:right; width:52%;}
+		.topBannerDesk{width:100%; height:auto;}
+		.topBannerMob{display:none;}
+		.mainContent{width:100%; background-color:#f4f4f4; padding-top:50px;}
+		.formContent{width:60%; background-color:#ffffff; margin: 0 auto; border: 1px solid #dcdcdc; padding:46px 4%;}
+		h1{font-family:"Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif; font-size:28px; color:#51626f; margin-bottom:12px;}
+		p{font-family:"Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif; font-size:14px; color:#51626f;}
+		span{font-family:"Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif; font-size:12px; color:#969a9d;}
+		.radioContainer{font-family:"Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif; font-size:14px; color:#51626f; margin-top:47px;}
+		input[type="radio"]{margin-right:12px;}
+		input[type="checkbox"]{margin-right:12px;}
+		input[type="submit"]{margin-top:47px; width: 190px;
+    height: 50px;
+    background-color: #ff7900;
+    color: #ffffff; font-size:16px; border:none; cursor:pointer; -webkit-appearance: none;}
+	.secondForm{width:94%; background-color:#f9f9f9; margin-top:45px; padding:35px 22px;}
+	textarea{height: 128px; width: 92%; margin-left: 28px; border: 1px solid #dadada}	
+	.footer{margin: 0 auto; width: 60%; padding: 55px 0px; text-align:center;}
+	.footer p{font-size:11px; color:#a5acb2;}
+		
+		/* Custom Radio*/
+input[type=radio].css-radio{
+  display: none;
+}
+input[type=radio].css-radio + label.css-label{
+  padding-left: 27px;
+  height: 16px;
+  display: inline-block;
+  line-height: 18px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding: 1px 12px;
+
+  cursor: pointer;
+  display: inline;
+}
+input[type=radio].css-radio:checked + label.css-label{
+  background-position: 0 -21px;
+}
+label.css-label{
+  background-image: url(radio.png);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select:none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Custom Checkbox*/
+input[type=checkbox].css-checkbox{
+  display: none;
+}
+input[type=checkbox].css-checkbox + label.css-label2{
+  padding-left: 27px;
+  height: 16px;
+  display: inline-block;
+  line-height: 18px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding: 1px 12px;
+
+  cursor: pointer;
+  display: inline;
+}
+input[type=checkbox].css-checkbox:checked + label.css-label2{
+  background-position: 0 -21px;
+}
+label.css-label2{
+  background-image: url(checkbox.png);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select:none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+ @media only screen and (max-width: 768px) {
+		.logo{float:none; width:255px;}
+		.contact{display:none;}
+		.topBannerDesk{display:none;}
+		.topBannerMob{display:block; width:100%; height:auto;}
+		.mainContent{padding-top:0px;}
+		.formContent{width:91%;}
+		input[type="submit"]{width:300px;}
+		textarea{margin-left:0px;}
+		.secondForm{width:88%;}
+		
+
+        }
+        /* Micro Clear */
+        .cf:before,.cf:after{content:"";display:table}
+        .cf:after{clear:both}
+        .cf{*zoom:1}
+
+
+
+
+    </style>
+<script>
+	function udatabase() {
+    document.getElementById('secondForm').style.display = "none";
+	}
+	function ucsv() {
+    document.getElementById('secondForm').style.display = "block";
+	}
+    </script>
+
+
+
+
+	</head>
+
+	<body>
+
+        <div class="wrapper cf">
+        
+        <div class="header">
+        	<div class="Hcontent"> <a href="#"><img class="logo" src="iT_img_01.jpg" width="255" height="95"/></a>
+              <a href="#"><img class="contact" src="iT_img_02.jpg" width="498" height="95" /></a>
+            </div> 
+        </div>
+        
+        <div class="topBanner">
+        	<img class="topBannerDesk" src="iT_img_03.jpg" />
+            <img class="topBannerMob" src="topBanner_mob.jpg" />
+        </div>
+        
+        <div class="mainContent">
+        	<div class="formContent">
+            <h1>Change your Subscription Preferences</h1>
+            <p>We totally understand that your inbox is a sacred place. You can update your subscription preferences below to receive emails less 
+frequently or you can unsubscribe completely.</p>
+			<div class="radioContainer"><input type="radio" name="data" onclick="udatabase()" id="udatabase" class="css-radio"><label class="css-label" for="udatabase"></label>Subscribe to all mailings</div>
+            <div class="radioContainer"><input type="radio" name="data" onclick="udatabase()" id="udatabase2" class="css-radio"><label class="css-label" for="udatabase2"></label>Subscribe to one mailing a week </div>
+            <div class="radioContainer"><input type="radio" name="data" onclick="udatabase()" id="udatabase3" class="css-radio"><label class="css-label" for="udatabase3"></label>Take a break for 3 months</div>
+            <div class="radioContainer"><input type="radio" name="data" onclick="udatabase()" id="udatabase4" class="css-radio"><label class="css-label" for="udatabase4"></label>Take a break for 6 months</div>
+            <div class="radioContainer"><input type="radio" name="data" onclick="udatabase()" id="udatabase5" class="css-radio"><label class="css-label" for="udatabase5"></label>Take a break for 1 year</div>
+            <div class="radioContainer">
+            <input type="radio" name="data" onclick="ucsv()" id="ucsv" class="css-radio"><label class="css-label" for="ucsv"></label>Unsubscribe from all emails <span>(except booking confirmations and other emails related to bookings)</span> </div>
+            <div class="secondForm" id="secondForm" style="display:none">
+            	<p style="font-size:16px !important">We are sorry you are unsubscribing from our newsletter. Could you please let us know why?</p>
+                 
+            <div class="radioContainer">
+            <input type="checkbox" class="css-checkbox" id="check2" /><label class="css-label2" for="check2"></label>I'm not interested in the deals featured in your emails</div>
+            <div class="radioContainer">
+            <input type="checkbox" class="css-checkbox" id="check3" /><label class="css-label2" for="check3"></label>I'm not interested in the types of vacations you send me (Vacations, Flights and/or Hotel)</div>
+            <div class="radioContainer">
+            <input type="checkbox" class="css-checkbox" id="check1" /><label class="css-label2" for="check1"></label>There were too many emails</div>
+            <div class="radioContainer">
+            <input type="checkbox" class="css-checkbox" id="check4" /><label class="css-label2" for="check4"></label>Other - Please specify below</div>
+             <div class="radioContainer">
+           <textarea placeholder="Write a comment in this box to let us know why you are unsubscribing"></textarea></div>
+            
+            	
+            
+            
+            
+            </div>
+            <input type="submit" value="Save Changes"/>
+            </div>
+            <div class="footer">
+            <p>Please note it may take up to 48 hours for any changes to be applied. We appreciate your patience while we update your preferences.</p></div>
+        
+        </div>
+       
+
+
+ 
+
+
+
+        </div>
+
+	
+
+	</body>
+</html>

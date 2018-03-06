@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Maven Pro Regular'), local('MavenProRegular'), url(http://fonts.gstatic.com/s/mavenpro/v7/MG9KbUZFchDs94Tbv9U-pZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Shadows Into Light';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Shadows Into Light'), local('ShadowsIntoLight'), url(http://fonts.gstatic.com/s/shadowsintolight/v6/clhLqOv7MXn459PTh0gXYKkG_nMAIv3PPZbC2XDns-o.woff2) format('woff2');
+}

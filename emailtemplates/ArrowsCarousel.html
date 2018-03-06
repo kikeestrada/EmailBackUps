@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+
+   <title>Arrows Carrousel V1</title>
+<style>
+
+body { width:100% !important; margin:0 auto; padding:0; -webkit-animation: bugfix infinite 1s;  }
+	@-ms-viewport { 
+        width: device-width; 
+    }
+	@-webkit-keyframes bugfix { from { padding: 0; } to { padding: 0; } }
+
+.ReadMsgBody {width: 100%;}
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td
+{line-height: 100%}
+
+
+table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; padding:0;}
+table td {border-collapse: collapse;}
+p{margin:0 auto; text-align:center;}
+*{-webkit-text-size-adjust:none;-ms-text-size-adjust:none;max-height:1000000px;mso-line-height-rule:exactly}
+*{line-height: 100%}
+.appleLinks a {color: #000000 !important; text-decoration: none !important;}
+/*Media for Android 4.4.4*/
+@media only screen and (max-width: 600px){
+	*[class=contenttable] { width:414px !important;}
+*[class=mobile] { width:414px !important;height: auto !important;}
+*[class=hide] {display: none !important;}
+*[class=showmobile]{display:block !important;  margin:auto !important; width:414px !important; height:auto !important; max-height:inherit !important; overflow:visible !important;}
+}
+/*Media iPhone 6 Plus*/	
+@media only screen and (max-width: 418px) {
+	*[class=contenttable] { width:414px !important;}
+*[class=mobile] { width:414px !important;height: auto !important;}
+*[class=hide] {display: none !important;}
+*[class=showmobile]{display:block !important;  margin:auto !important; width:414px !important; height:auto !important; max-height:inherit !important; overflow:visible !important;}
+
+
+}
+/*Media iPhone 6*/	
+  @media only screen and (max-width: 379px) {
+	*[class=contenttable] { width:375px !important;}
+*[class=mobile] { width:375px !important;height: auto !important;}
+*[class=hide] {display: none !important;}
+*[class=showmobile]{display:block !important;  margin:auto !important; width:375px !important; height:auto !important; max-height:inherit !important; overflow:visible !important;}
+*[class=arrowImage] { width:37px !important; height:226px !important;}
+*[class=centerImage] { width:301px !important; height:226px !important;}
+*[class=centerImageOne] { width:338px !important; height:226px !important;}
+  }
+ /*Media iPhone & Regular mobile size 320*/	
+ @media only screen and (max-width: 330px) { 
+*[class=contenttable] { width:320px !important;}
+*[class=mobile] { width:320px !important;height: auto !important;}
+*[class=hide] {display: none !important;}
+*[class=showmobile]{display:block !important;  margin:auto !important; width:320px !important; height:auto !important; max-height:inherit !important; overflow:visible !important;}
+*[class=arrowImage] { width:31px !important; height:193px !important;}
+*[class=centerImage] { width:258px !important; height:193px !important;}
+*[class=centerImageOne] { width:289px !important; height:193px !important;}
+
+}
+</style>
+<style>
+input{
+  display:none;
+}
+.tab{
+  display:none;
+}
+#tab1:checked ~ .tab1,
+#tab2:checked ~ .tab2,
+#tab3:checked ~ .tab3,
+#tab4:checked ~ .tab4{
+  display:block;
+ 
+}
+
+</style>
+</head>
+
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center" valign="top">
+ 
+      <table width="600" border="0" cellspacing="0" cellpadding="0" class="hide">
+        <tr>
+          <td><a href="#"><img src="http://ctmanager.ninja/test/kineticArrows/Desktop.gif" width="600" height="362" alt="" style="display:block;" border="0" /></a></td>
+        </tr>
+      </table>
+      <!--[if !mso]><!-->
+		<div style="display:none; width:0px; max-height:0px; overflow:hidden;" class="showmobile">
+  <table width="320" border="0" align="center" cellpadding="0" cellspacing="0" class="showmobile" style="margin: 0 auto; display: none; border: 0; max-height:0px; overflow:hidden;">
+  <tr>
+    <td>
+    <input type="radio" name="tabs" id="tab1" checked>
+    <input type="radio" name="tabs" id="tab2">
+	<input type="radio" name="tabs" id="tab3">
+	<input type="radio" name="tabs" id="tab4">
+
+<div class="tab tab1">
+<table border="0" cellspacing="0" cellpadding="0" class="showmobile" bgcolor="#2e2f34">
+    <tr>
+    <td><label for="tab4" id="btn4"><img class="arrowImage" src="http://ctmanager.ninja/test/kineticArrows/page1_01.jpg" width="40" height="250" alt="" style="display:block;" border="0" /></label></td>
+      <td><img class="centerImage" src="http://ctmanager.ninja/test/kineticArrows/page1_02.jpg" width="334" height="250" alt="" style="display:block;" border="0" /></td>
+      <td><label for="tab2" id="btn2"><img class="arrowImage" src="http://ctmanager.ninja/test/kineticArrows/page1_03.jpg" width="40" height="250" alt="" style="display:block;" border="0" /></label></td>
+    </tr>
+</table>
+</div>
+<div class="tab tab2">
+<table border="0" cellspacing="0" cellpadding="0" class="showmobile" bgcolor="#817971">
+    <tr>
+      <td><label for="tab1" id="btn1"><img class="arrowImage" src="http://ctmanager.ninja/test/kineticArrows/page2_01.jpg" width="40" height="250" alt="" style="display:block;" border="0" /></label></td>
+      <td><img class="centerImage" src="http://ctmanager.ninja/test/kineticArrows/page2_02.jpg" width="334" height="250" alt="" style="display:block;" border="0" /></td>
+      <td><label for="tab3" id="btn3"><img class="arrowImage" src="http://ctmanager.ninja/test/kineticArrows/page2_03.jpg" width="40" height="250" alt="" style="display:block;" border="0" /></label></td>
+    </tr>
+</table>
+  </div>
+<div class="tab tab3">
+<table border="0" cellspacing="0" cellpadding="0" class="showmobile" bgcolor="#3a4b3e">
+    <tr>
+      <td><label for="tab2" id="btn2"><img class="arrowImage" src="http://ctmanager.ninja/test/kineticArrows/page3_01.jpg" width="40" height="250" alt="" style="display:block;" border="0" /></label></td>
+      <td><img class="centerImage" src="http://ctmanager.ninja/test/kineticArrows/page3_02.jpg" width="334" height="250" alt="" style="display:block;" border="0" /></td>
+      <td><label for="tab4" id="btn4"><img class="arrowImage" src="http://ctmanager.ninja/test/kineticArrows/page3_03.jpg" width="40" height="250" alt="" style="display:block;" border="0" /></label></td>
+    </tr>
+</table>
+  </div>
+<div class="tab tab4">
+<table border="0" cellspacing="0" cellpadding="0" class="showmobile" bgcolor="#4c4742">
+    <tr>
+    	<td><label for="tab3" id="btn3"><img class="arrowImage" src="http://ctmanager.ninja/test/kineticArrows/page4_01.jpg" width="40" height="250" alt="" style="display:block;" border="0" /></label></td>
+        <td><img class="centerImage" src="http://ctmanager.ninja/test/kineticArrows/page4_02.jpg" width="334" height="250" alt="" style="display:block;" border="0" /></td>
+        <td><label for="tab1" id="btn1"><img class="arrowImage" src="http://ctmanager.ninja/test/kineticArrows/page4_03.jpg" width="40" height="250" alt="" style="display:block;" border="0" /></label></td>
+    </tr>
+</table>
+</div>
+    
+    
+    
+    
+    </td>
+  </tr>
+</table>
+</div>
+	  <!--<![endif]--> 
+     
+    </td>
+  </tr>
+</table>
+
+
+</body>
+</html>

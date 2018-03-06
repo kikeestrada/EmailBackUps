@@ -1,0 +1,539 @@
+body { margin: 0; padding: 0; }
+
+a {
+color: #333;
+text-decoration: none;
+}
+
+#header {
+	width:100%;
+	height:88px;
+	overflow:hidden;
+	background: #ffcc01;
+}
+
+
+#gt_site_logo {
+	height: 88px;
+}
+
+
+#block-system-main-menu {
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	position:relative;
+	text-align: right;
+	top: 20px;
+}
+
+#language_toggle {
+	position: relative;
+	z-index: 40;
+	top: 20px;
+	right: -6px;
+	font-family: 'Lucida Sans Unicode','Lucida Grande', Arial, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	text-align: right;	
+}
+
+#language_toggle ul {
+	font-size: 15px;
+	list-style-type: none;	
+}
+
+#gt_top_menu  {
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	position:relative;
+	text-align: right;
+	top: 20px;
+	margin-top: 6px;
+	width: 600px;
+	margin-left: -15px;
+}
+
+#block-system-main-menu ul li {
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+	margin-left:auto;
+	margin-right:0;
+	display:inline;
+	list-style: none;
+	padding:8px;
+}
+
+#gt_top_menu ul li {
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+	font-size: 110%;
+	height: 45px;
+	display: inline-block;
+	padding-left: 45px;
+	padding-top: 9px;
+	float: left;
+}
+
+.eFlyer {
+	background:  url('/images/icons/nav-eflyer-icon.gif') no-repeat 0 0;
+	margin-right: 34px;
+}
+
+.eFlyerFR {
+	background:  url('/images/icons/nav-eflyer-icon.gif') no-repeat 0 0;
+	margin-right: 24px;
+	margin-left: -25px;
+}
+
+.emailIcon {
+	background:  url('/images/icons/nav-email-icon.gif') no-repeat 0 0;
+	margin-right: 34px;	
+}
+
+.emailIconFR {
+	background:  url('/images/icons/nav-email-icon.gif') no-repeat 0 0;
+	margin-right: 24px;			
+}
+
+.locator {
+	background:  url('/images/icons/nav-locator-icon.gif') no-repeat 0 0;	
+}
+
+
+#block-locale-language {
+	top: 20px;
+	display:inline;
+	position:relative;
+
+}
+
+
+#gt_site_search  {
+	top:0px;
+	list-style:none;
+	display: block;
+	position: relative;
+	left: 70px;
+}
+#gt_site_search  li {
+	display: inline;
+	list-style:none;
+}
+
+.language-switcher-locale-url li.active a{
+	display: none;
+}
+
+.language-switcher-locale-url li,
+.language-switcher-locale-url ul,
+.language-switcher-locale-url ol,
+.language-switcher-locale-url a,
+.language-switcher-locale-url a:link,
+.language-switcher-locale-url a.link,
+.language-switcher-locale-url a:visited,
+.language-switcher-locale-url a.visited,
+.language-switcher-locale-url a:hover,
+.language-switcher-locale-url a.hover,
+.language-switcher-locale-url a.hovered {
+	width:40px;
+	display: inline;
+}
+
+#gt_menu_outer {
+	width: 100%;
+	height: 40px;
+	z-index: 21;
+
+	
+	/* Background color and gradients */
+	background: #2b2b2b;
+	background: -moz-linear-gradient(top, #5e5e5e, #2b2b2b);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#5e5e5e), to(#2b2b2b));
+
+	/* Borders */	
+	border-top: 3px solid #cc0033; /* Red Line */	
+}
+
+#gt_menu {
+	height: 40px;
+	line-height:17px;
+	position: relative;
+	z-index: 20;
+}
+#gt_menu ul {
+	margin-top:0px; /* this is important */
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:0px;
+	width: 960px;
+}
+
+#gt_menu li {
+	font-size:14px; 
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:left;
+	float:left;
+	display:block;
+	text-align:center;
+	position:relative;
+
+	border-right:1px solid #5e5e5e;
+	border-left:1px solid #2b2b2b;
+}
+
+#menu_fashion							{padding: 9px 19px 9px 19px;}
+#menu_house-and-home					{padding: 9px 19px 9px 20px;}
+#menu_grocery							{padding: 9px 20px 9px 20px;}
+#menu_health-and-beauty					{padding: 9px 20px 9px 20px;}
+#menu_special-items-and-gifts			{padding: 9px 20px 9px 20px;}
+#menu_pet-supplies						{padding: 9px 20px 9px 20px;}
+#menu_join-us							{padding: 9px 20px 9px 20px;}
+#menu_contact-us						{padding: 9px 20px 9px 20px;}
+
+#menu_fashion:hover						{padding: 9px 20px 9px 20px;}
+#menu_house-and-home:hover				{padding: 9px 20px 9px 21px;}
+#menu_grocery:hover						{padding: 9px 21px 9px 21px;}
+#menu_health-and-beauty:hover			{padding: 9px 21px 9px 21px;}
+#menu_special-items-and-gifts:hover		{padding: 9px 21px 9px 21px;}
+#menu_pet-supplies:hover				{padding: 9px 21px 9px 21px;}
+#menu_join-us:hover						{padding: 9px 21px 9px 21px;}
+#menu_contact-us:hover					{padding: 9px 21px 9px 21px;}
+
+#menu_vetements							{padding: 9px 18px 9px 18px;}
+#menu_demeure							{padding: 9px 18px 9px 18px;}
+#menu_epicerie							{padding: 9px 18px 9px 18px;}
+#menu_sante-et-beaute					{padding: 9px 18px 9px 18px;}
+#menu_articles-speciaux					{padding: 9px 18px 9px 18px;}
+#menu_animalerie						{padding: 9px 18px 9px 18px;}
+#menu_rejoignez-nous					{padding: 9px 19px 9px 19px;}
+#menu_contactez-nous					{padding: 9px 19px 9px 19px;}
+
+#menu_vetements:hover					{padding: 9px 19px 9px 19px;}
+#menu_demeure:hover						{padding: 9px 19px 9px 19px;}
+#menu_epicerie:hover					{padding: 9px 19px 9px 19px;}
+#menu_sante-et-beaute:hover				{padding: 9px 19px 9px 19px;}
+#menu_articles-speciaux:hover			{padding: 9px 19px 9px 19px;}
+#menu_animalerie:hover					{padding: 9px 19px 9px 19px;}
+#menu_rejoignez-nous:hover				{padding: 9px 20px 9px 20px;}
+#menu_contactez-nous:hover				{padding: 9px 20px 9px 20px;}
+
+
+#gt_menu li:hover {
+
+	border: 0px;	
+	/* Background color and gradients */
+
+	background: #e6e6e6;
+}
+
+#gt_menu li a {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px; 
+	color: #F4F4F4;
+	display:block;
+	outline:0;
+	text-decoration:none;
+	text-shadow: 1px 1px 1px #000;
+}
+
+#gt_menu li:hover a {
+	color:#161616;
+	text-shadow: 1px 1px 1px #ffffff;
+}
+
+.dropdown_1column, 
+.dropdown_2columns, 
+.dropdown_3columns, 
+.dropdown_4columns,
+.dropdown_5columns,
+.dropdown_6columns,
+.dropdown_fashion, .dropdown_vetements,
+.dropdown_house, .dropdown_demeure,
+.dropdown_grocery, .dropdown_epicerie,
+.dropdown_health, .dropdown_sante_et_beaute,
+.dropdown_special_items, .dropdown_articles_speciaux,
+.dropdown_pet_supplies, .dropdown_animalerie,
+.dropdown_join_us, .dropdown_rejoignez_nous,
+.dropdown_contact_us, .dropdown_contactez_nous {
+
+	top: 39px;
+  	z-index: 20;
+	float:left;
+	position:absolute;
+	display: none;
+	text-align:left;
+	
+	/* Red Line at the bottom of dropdowns */
+	border:0px solid #e6e6e6;
+	border-top:none;
+	border-bottom:3px solid #cc0033; 
+	
+	/* Gradient background */
+	background:#e6e6e6;
+	background: -moz-linear-gradient(top, #e6e6e6, #ffffff);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e6e6e6), to(#ffffff));
+
+}
+
+
+
+#gt_menu li .dropdown_fashion					{ left: 0px;}
+#gt_menu li .dropdown_house						{ left: -91px;}
+#gt_menu li .dropdown_grocery					{ left: -228px;}
+#gt_menu li .dropdown_health					{ left: -321px;}
+#gt_menu li .dropdown_special_items				{ left: -465px;}
+#gt_menu li .dropdown_pet_supplies				{ left: -638px;}
+#gt_menu li .dropdown_join_us					{ left: -759px;}
+#gt_menu li .dropdown_contact_us				{ left: -848px;}
+
+#gt_menu li .dropdown_vetements					{ left: 0px;}
+#gt_menu li .dropdown_demeure					{ left: -106px;}
+#gt_menu li .dropdown_epicerie					{ left: -202px;}
+#gt_menu li .dropdown_sante_et_beaute			{ left: -291px;}
+#gt_menu li .dropdown_articles_speciaux			{ left: -432px;}
+#gt_menu li .dropdown_animalerie				{ left: -574px;}
+#gt_menu li .dropdown_rejoignez_nous			{ left: -681px;}
+#gt_menu li .dropdown_contactez_nous			{ left: -820px;}
+
+
+
+#gt_menu li:hover>div {
+	display:inline;
+}
+
+
+
+
+#gt_menu p, #gt_menu h2, #gt_menu h3, #gt_menu ul li {
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:21px;
+	font-size:14px;
+	text-align:left;
+	text-shadow: 1px 1px 1px #FFFFFF;
+}
+#gt_menu h2 {
+	font-size:21px;
+	font-weight:400;
+	letter-spacing:-1px;
+	margin:7px 0 14px 0;
+	padding-bottom:14px;
+	border-bottom:0px solid #666666;
+}
+#gt_menu h3 {
+	font-size:14px;
+	margin:7px 0 14px 0;
+	padding-bottom:7px;
+	border-bottom:0px solid #888888;
+}
+#gt_menu p {
+	line-height:18px;
+	margin:0 0 10px 0;
+}
+
+#gt_menu li:hover div a {
+	font-size:14px;
+	color:#646464;
+}
+#gt_menu li:hover div a:hover {
+	color:#cc0033;
+}
+
+
+.strong {
+	font-weight:bold;
+}
+.italic {
+	font-style:italic;
+}
+
+.imgshadow { /* Better style on light background */
+	background:#FFFFFF;
+	padding:4px;
+	border:1px solid #777777;
+	margin-top:5px;
+	-moz-box-shadow:0px 0px 5px #666666;
+	-webkit-box-shadow:0px 0px 5px #666666;
+	box-shadow:0px 0px 5px #666666;
+}
+.img_left { /* Image sticks to the left */
+	width:auto;
+	float:left;
+	margin:5px 15px 5px 5px;
+}
+
+#gt_menu li ul {
+	list-style:none;
+	padding:0;
+	margin:0 0 12px 0;
+}
+#gt_menu li ul li {
+	font-size:14px;
+	line-height:24px;
+	position:relative;
+	text-shadow: 1px 1px 1px #ffffff;
+	padding:0;
+	margin:0;
+	float:none;
+	text-align:left;
+	/* width:130px; */
+}
+#gt_menu li ul li:hover {
+	background:none;
+	border:none;
+	padding:0;
+	margin:0;
+}
+
+#gt_menu li div li {
+	border:0px solid #bbbbbb;   /* Remove for testing only */
+}
+
+
+/* Columns in dropdowns */
+
+
+#gt_menu > ul > li > div > div {
+	margin-left: 0px;
+	margin-right: 0px;
+    padding-left: 20px;
+    border:0px solid #bbbbbb;   /* Remove for testing only */
+}
+
+#gt_menu .container_12 {
+	min-height: 100px;
+}
+#gt_menu .container_12 > div > ul > div {
+	width: auto;
+}
+
+#gt_menu .container_ladies > ul > div.omega {
+	padding-left:12px;
+}
+#gt_menu .container_mens > ul > div.omega {
+	padding-left:80px;
+}
+#gt_menu .container_kids > ul > div.omega {
+	padding-left: 70px;
+}
+#gt_menu .container_house > ul > div.grid_2.omega {
+	padding-left: 92px;
+}
+#gt_menu .container_grocery > ul > div.grid_2.omega {
+	padding-left: 92px;
+}
+#gt_menu .container_health > ul > div.grid_2.omega {
+	padding-left: 92px;
+}
+#gt_menu .container_special_items > ul > div.grid_2.omega {
+	padding-left: 92px;
+}
+#gt_menu .container_pet_supplies > ul > div.grid_2.omega {
+	padding-left: 92px;
+}
+#gt_menu .container_contact_us > ul > div.grid_2.omega {
+	padding-left: 40px;
+}
+
+
+
+#gt_menu .container_community > ul > div.omega {
+	padding-left: 70px;
+}
+#gt_menu .container_join_our_team > ul > div.omega {
+	padding-left: 40px;
+}
+
+
+
+
+
+#gt_menu .container_dames > ul > div.grid_2,
+#gt_menu .container_hommes > ul > div.grid_2,
+#gt_menu .container_enfants > ul > div.grid_2 {
+	max-width:140px;
+}
+#gt_menu .container_dames > ul > div.grid_4,
+#gt_menu .container_hommes > ul > div.grid_4,
+#gt_menu .container_enfants > ul > div.grid_4 {
+	max-width:240px;
+}
+#gt_menu .container_dames > ul > div.omega {
+	padding-left:0px;
+}
+#gt_menu .container_hommes > ul > div.omega {
+	padding-left:0px;
+}
+#gt_menu .container_enfants > ul > div.omega {
+	padding-left: 0px;
+}
+
+#gt_menu .container_demeure > ul > div.grid_2.omega {
+	padding-left: 18px;
+}
+#gt_menu .container_epicerie > ul > div.grid_2.omega {
+	padding-left: 92px;
+}
+#gt_menu .container_sante_et_beaute > ul > div.grid_2.omega {
+	padding-left: 92px;
+}
+#gt_menu .container_articles_speciaux > ul > div.grid_2.omega {
+	padding-left: 92px;
+}
+#gt_menu .container_animalerie > ul > div.grid_2.omega {
+	padding-left: 130px;
+}
+#gt_menu .container_contact_us > ul > div.grid_2.omega {
+	padding-left: 40px;
+}
+
+
+
+
+
+
+
+
+/* Vertical division lines for the dropdown menu */
+
+#gt_menu .container_ladies,
+#gt_menu .container_dames {
+	width: 320px;
+}
+#gt_menu .container_mens,
+#gt_menu .container_hommes,
+#gt_menu .container_kids,
+#gt_menu .container_enfants {
+	width: 280px;
+}
+
+#gt_menu .container_community,
+#gt_menu .container_la_communaute {
+	width: 340px;
+}
+#gt_menu .container_join_our_team > ul > div.alpha {
+	width: 140px;
+}
+
+#gt_menu .container_online {
+	width: 160px;
+}
+
+#gt_menu .container_en_ligne {
+	width: 200px;
+}
+
+
+#gt_menu .container_mens,
+#gt_menu .container_hommes,
+#gt_menu .container_online,
+#gt_menu .container_en_ligne {
+	border-right: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+}

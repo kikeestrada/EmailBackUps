@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, 
+maximum-scale=1" />
+
+<title>Collapsible + Ham nav</title>
+<style type="text/css">
+body {
+	width: 100% !important;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	margin: 0;
+	padding: 0;
+}
+.ReadMsgBody {
+	width: 100%;
+}
+.ExternalClass p, .ExternalClass span, .ExternalClass font, 
+.ExternalClass td {
+	line-height: 100%
+}
+table {
+	border-collapse: collapse;
+	mso-table-lspace: 0pt;
+	mso-table-rspace: 0pt;
+	padding: 0;
+}
+table td {
+	border-collapse: collapse;
+}
+
+@media only screen and (max-width: 480px) {
+
+*[class=contenttable] { width:320px !important; min-width:320px !important;}
+*[class=mobile] { width:320px !important;height: auto !important;}
+*[class=hide] {display: none !important;}
+*[class=showmobile]{display:block !important;  margin:auto !important; 
+width:320px !important; height:auto !important; max-height:inherit 
+!important; overflow:visible !important;}
+*[class=showmobile2]{display:block !important;  margin:auto !important; 
+height:auto !important; max-height:inherit !important; overflow:visible 
+!important;}
+
+*[class=arrowImage] { width:31px !important; height:193px !important;}
+*[class=centerImage] { width:258px !important; height:193px !important;}
+*[class=centerImageOne] { width:289px !important; height:193px !important;}
+			
+			/*--Collapsible--*/
+					*[id]#wrapper + table,
+                    *[class].container,
+                    *[class].colcontentf
+    
+                    {
+                        min-width: 0 !important;
+                        -moz-text-size-adjust: none;
+                        -ms-text-size-adjust: none;
+                        -webkit-text-size-adjust: none;
+                        width: 100% !important;
+                    }
+    
+                    *[id]#logo
+                    {
+                        height: 50px;
+                        width: 182px;
+                    }
+    
+                    *[id]#colf-label
+    
+                    {
+                        background-color: #00a7b5;
+                        cursor: pointer;
+                        display: block !important;
+                        -webkit-tap-highlight-color: transparent;
+                        width: 100%;
+                    }
+    
+                    *[id]#colf-label > b
+    
+                    {
+                        background-color: #ffffff;
+                        -moz-border-radius: 2px;
+                        -webkit-border-radius: 2px;
+                        border-radius: 2px;
+                        display: block;
+                        height: 4px;
+						width:56px;
+                    }
+    
+                    *[id]#colf-label > b + b
+                    {
+                        margin-top: 4px;
+                    }
+    
+                    /**[class].colcontent td
+                    {
+                        padding: 0 !important;
+                    }*/
+    
+                    *[id]#colcontentf-wrapper
+    
+                    {
+                        background-color: #ffffff;
+                        max-height: 0;
+                        overflow: hidden;
+                        -moz-transition: max-height .25s linear;
+                        -ms-transition: max-height .25s linear;
+                        -o-transition: max-height .25s linear;
+                        -webkit-transition: max-height .25s linear;
+                        transition: max-height .25s linear;
+                    }
+    
+    
+    
+                    *[id]#colf:checked + table #colcontentf-wrapper
+                    {
+                        max-height: 960px;
+						
+                    }
+					
+					*[id]#colf ~ table .tap_to_hide {
+						display: none;	
+					}
+					
+					*[id]#colf:checked ~ table .tap_to_hide {
+						display: block;	
+					}
+					
+					*[id]#colf:checked ~ table .tap_to_show {
+						display: none;	
+					}
+
+                    *[class].colcontentf + .colcontentf
+                    {
+                        border-top: 1px solid #7C90AF;
+                    }
+    
+                    *[class].colcontentf-tab
+                    {
+                        color: #FFFFFF !important;
+                        display: block;
+                        text-align: center;
+                    }
+					/*--End Collapsible--*/
+				
+					
+}
+
+
+</style>
+
+</head>
+
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+    <td align="center" valign="top">
+   
+	<table width="600" border="0" cellspacing="0" cellpadding="0" class="hide">
+        <tr>
+          <td><a href="#"><img src="http://ctmanager.ninja/test/kineticArrows/Desktop.gif" width="600" height="362" alt="" style="display:block;" border="0" /></a></td>
+        </tr>
+      </table>
+    
+             <!--[if !mso]><!-->
+		<div style="display:none; width:0px; max-height:0px; overflow:hidden; 
+background-color:#f05a28; padding-top:15px;" class="showmobile">
+          
+      <table style="border-collapse: collapse; border-spacing: 0; 
+table-layout: 
+fixed;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+    
+                    <tbody><tr>
+    
+                        <td align="center">
+    
+                            <!--[if mso]><p style="display: 
+none;"><![endif]-->
+    
+                                <input id="colf" style="display: 
+none!important; max-height: 0; visibility: hidden;" type="checkbox">
+    
+                            <!--[if mso]></p><![endif]-->
+    
+                            <table class="container" style="border-collapse: collapse; border-spacing: 0; margin: auto; 
+min-width: 560px;" align="center" border="0" cellpadding="0" cellspacing="0" width="560">
+    
+                                <tbody><tr>
+    
+                                    <td>
+    
+                                        <label for="colf" id="colf-label" style="display: none;">
+    <div style="display:none; width:0px; max-height:0px; 
+overflow:hidden;" class="showmobile">
+  <table class="showmobile" style="margin: 0 auto; display: none; 
+border: 0; max-height:0px; overflow:hidden;" align="center" bgcolor="#eae9e9" border="0" cellpadding="0" cellspacing="0" width="320">
+  <tbody><tr>
+  <td align="center" valign="top">
+  <table class="showmobile" style="margin: 0 auto; display: none; border: 
+0; 
+max-height:0px; overflow:hidden;" align="center" bgcolor="#db353e" border="0" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+  	<td bgcolor="#58595b" width="10">&nbsp;</td>
+    <td bgcolor="#58595b" style="width: 210px; padding-left: 7px;">
+	<font face="Gotham, Helvetica Neue, Helvetica, Arial, sans-serif" style="font-size:12px; color:#ffffff; line-height:25px; text-transform:uppercase;">See The Products</font></td>
+    <td style="padding-right: 
+12px; width: 100px;" align="right" bgcolor="#58595b" width="100"><font class="tap_to_show" style="color:#ffffff; 
+font-size:32px;" face="Gotham, Helvetica 
+Neue, Helvetica, Arial, sans-serif"><font style="font-size:32px;">+</font></font>
+    
+    <font class="tap_to_hide" style="color:#ffffff; font-size:10px;" face="Gotham, Helvetica Neue, Helvetica, 
+Arial, sans-serif"><font style="font-size:32px;">x</font></font></td>
+    <td bgcolor="#58595b" width="10">&nbsp;</td>
+   </tr></tbody></table> 
+    </td>
+  </tr>
+</tbody></table>
+
+</div>
+    
+                                        </label>
+                                        <table class="colcontentf" align="center" border="0" cellpadding="0" cellspacing="0" width="560">
+    
+                                            <tbody><tr>
+    
+                                                <td>
+    
+                                                    <div id="colcontentf-wrapper">
+    															
+
+<table width="320" border="0" cellpadding="0" cellspacing="0" bgcolor="#ebebeb">
+  
+    <tr>
+      <td width="20">&nbsp;</td>
+      <td height="45"><font style="font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif; color:#666666; font-size:12px;"><a href="#" style="text-decoration:none; color:#666666;">TAB 1</a></font></td>
+    </tr>
+  
+</table>
+<table width="320" border="0" cellpadding="0" cellspacing="0" bgcolor="#ebebeb">
+  
+    <tr>
+      <td width="20">&nbsp;</td>
+      <td height="45"><font style="font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif; color:#666666; font-size:12px;"><a href="#" style="text-decoration:none; color:#666666;">TAB 2</a></font></td>
+    </tr>
+  
+</table>
+
+                         
+    
+                                                    </div>
+    
+                                                </td>
+    
+                                            </tr>
+    
+                                        </tbody></table>
+    
+                                    </td>
+    
+                                </tr>
+    
+                            </tbody></table>
+    
+                        </td>
+    
+                    </tr>
+    
+                </tbody></table>
+        
+	</div>
+		<!--<![endif]--> 
+        <br /><br />
+        
+       
+     
+    </td>
+  </tr>
+</tbody></table>
+
+
+</body>
+</html>
+
