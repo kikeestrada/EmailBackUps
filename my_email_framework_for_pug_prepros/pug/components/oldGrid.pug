@@ -1,0 +1,43 @@
+//if (gte mso 9)|(IE)
+	table(width='600', align='center', cellpadding='0', cellspacing='0', border='0')
+		tr
+			td
+div(style='display:none; white-space:nowrap; font:15px courier; color:#ffffff;')
+	| - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+table.container(width='100%', cellpadding='0', cellspacing='0', align='center')
+	tr
+		td(style='text-align: center; vertical-align: top; font-size: 0;')
+			//if (gte mso 9)|(IE)
+				table(width='100%', align='center', cellpadding='0', cellspacing='0', border='0')
+					tr
+						td
+			.contenttable(style='width: 295px; display: inline-block; vertical-align: top; background-color:#557E8A;')
+				table(width='100%', cellpadding='0', cellspacing='0', bgcolor='#557E8A')
+					tr
+						td
+							+imgSpacer('15', '1')
+						td(align='left')
+							font(style="font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 25px; color:#F8FBE5;")
+								| This is where your left content goes
+						td
+							+imgSpacer('15', '141')
+			//if (gte mso 9)|(IE)
+				td
+			.hide(style='width: 10px; display: inline-block; vertical-align: top;')
+				table(width='10px', cellpadding='0', cellspacing='0')
+					tr
+						td(style='font-size:0; line-height:0;')
+							+imgSpacer('10', '1')
+			//if (gte mso 9)|(IE)
+				td
+			.contenttable(style='width: 295px; display: inline-block; vertical-align: top; background-color:#557E8A;')
+				table(width='100%', bgcolor='#557E8A', cellpadding='0', cellspacing='0')
+					tr
+						td
+							+imgSpacer('15', '1')
+						td(align='left')
+							font(style="display:block; font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 25px; color:#F8FBE5;") This is where your right content goes
+						td
+							+imgSpacer('15', '141')
+			//if (gte mso 9)|(IE)
+//if (gte mso 9)|(IE)

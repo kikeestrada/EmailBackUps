@@ -1,0 +1,27 @@
+// Mobile Styles
+@media only screen and (max-width: 649px){
+	/*block Table*/
+	.blocktable, *[class~="blocktable"]{width:100%!important;}
+
+	/*block td*/ 
+	.blocktd, *[class~="blocktd"]{	width: 100%; box-sizing: border-box; clear: both !important; float: none !important; display: block !important;}
+
+
+	/*hide element mobile*/
+	.hide-element-mb,*[class~="hide-element-mb"]{display:none!important;}
+
+	/*Show container mobile*/
+	.show-container-mb, *[class~="show-container-mb"]{
+		display:block!important;
+		margin:auto!important;
+		width:100%!important;
+		height:auto!important;
+		max-height:inherit!important;
+		overflow:visible!important;
+	}
+
+	/*show element mobile*/
+	.show-element-mb, *[class~="show-element-mb"]{display:block!important;}
+
+	@import "../mobilecss/customcss";
+}

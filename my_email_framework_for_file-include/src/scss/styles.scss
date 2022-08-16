@@ -1,0 +1,12 @@
+$breakpoints: (
+	movil  : 480px,
+	tablet : 768px,
+	web    : 1025px,
+	hd     : 1400px
+);
+			
+@import "core/dev";
+@import "./core/reset";
+@import "./core/grid_layout_dk";
+@import "./mobilecss/mobilecss";
+@import "./core/utilities";

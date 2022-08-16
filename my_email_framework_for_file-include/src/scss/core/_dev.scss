@@ -1,0 +1,117 @@
+
+@mixin hasta($size){
+	@if map-has-key($breakpoints,$size){
+		@media screen and (max-width: map-get($breakpoints,$size) - 1){
+			@content;
+		}
+	} @else {
+		@media screen and (max-width: $size){
+			@content;
+		}
+	}
+}
+
+@mixin desde($size){
+	@if map-has-key($breakpoints,$size){
+		@media screen and (min-width: map-get($breakpoints,$size)){
+			@content;
+		}
+	} @else {
+			@media screen and (min-width: $size){
+			@content;
+		}
+	}
+	}
+
+@mixin desde-hasta($desde,$hasta){
+	@if map-has-key($breakpoints,$desde) and map-has-key($breakpoints,$hasta){
+		@media screen and (min-width: map-get($breakpoints,$desde)) and (max-width: map-get($breakpoints,$hasta) - 1){
+			@content;
+		}
+	} @else if map-has-key($breakpoints,$desde) and not map-has-key($breakpoints,$hasta){
+		@media screen and (min-width: map-get($breakpoints,$desde)) and (max-width: $hasta) {
+			@content;
+		}
+	} @else if not map-has-key($breakpoints,$desde) and map-has-key($breakpoints,$hasta) {
+		@media screen and (min-width: $desde) and (max-width: map-get($breakpoints,$hasta) - 1){
+			@content;
+		}
+	} @else {
+		@media screen and (min-width: $desde) and (max-width: $hasta){
+			@content;
+		}
+	}
+}
+
+
+/* 	ESTILOS PARA dev
+	========================
+	Añada la clase "dev"
+   	a body para tener ayudas al trabajar con ED GRID 
+*/
+body.dev {
+	&:before {
+		// Estilos para el mensaje en el top del body
+			background    : steelblue; /*Azul BG*/	
+			color         : #ffffff;
+		// Estilos de fuente
+			font-family   : sans-serif;
+			font-size     : 18px;
+			font-weight   : bold;
+			line-height   : 36px;
+			text-align    : center;
+		// Layout y caja	
+			display       : block;
+			height        : 36px;
+			margin-bottom : 30px;
+		// Poner el mensaje por sobre cualquier elemento
+			position      : relative;
+			z-index       : 900;
+			content: "Email Boilerplate: Base Size";
+	}
+}
+
+// Loop para imprimir el mensaje de dev basado en los breakpoints
+@each $size, $screen-size in $breakpoints {
+	@include desde($size){
+	body.dev:before{
+		content: "Email Boilerplate: Size #{$size}, From To #{$screen-size}";
+		}
+	}
+}
+
+body.dev table {
+	outline: 5px solid steelblue;
+	&:before {
+			background    : steelblue;
+			color         : #fff;
+			font-family   : sans-serif;
+			font-size     : 16px;
+			font-weight   : bold;
+			line-height   : 22px;
+			text-align    : center;
+			display       : block;
+			height        : 22px;
+			position      : relative;
+			z-index       : -1;
+			content: "Main Table Container";
+	}
+	tr{
+		td{
+			position : relative;
+			> table {
+				&:before {display: none;}
+					outline: 2px solid tomato;		
+				tr{ 
+					outline: 2px solid #eeeeee;	
+					td{
+						&:nth-child(even){
+							background: rgba(steelblue,.2);
+						}
+				}
+				}
+				
+			}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+block config
+	include ../utilis/vars
+	include ../mixins/mixins
+doctype transitional
+html(xmlns='http://www.w3.org/1999/xhtml')
+	head
+		include ../utilis/metaTags
+		include ../utilis/cssEmailreset
+	body(style='padding:0 !important;')
+		// Starts NEW Gmail App fix
+		div(class='gmailfix', style='white-space:nowrap; font:15px courier; line-height:0;')
+			|&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+			|&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+			|&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+		// Ends NEW Gmail App fix
+		table(width='100%', border='0', cellspacing='0', cellpadding='0', align='center', bgcolor='#ffffff')
+			tr
+				td(valign='top')
+					block emailBody
+					// Ends Gmail App fix 2
+					div(style='display:none; white-space:nowrap; font:15px courier; color:#ffffff;')
+						| - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

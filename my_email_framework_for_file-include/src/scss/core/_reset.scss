@@ -1,0 +1,87 @@
+%text-family {font-family: Arial, Helvetica, sans-serif;}
+%margin-padding {margin: 0 !important; padding: 0 !important; }
+%rl-space {-mso-table-lspace: 0pt !important; -mso-table-rspace: 0pt !important;}
+%text-size-adjust{-ms-text-size-adjust: 100%b !important; -webkit-text-size-adjust: 100% !important;}
+%line-height-rule{-mso-line-height-rule: exactly !important;}
+
+*{
+	@extend %text-size-adjust;
+	-webkit-font-smoothing: antialiased;
+	max-height:1000000px;
+	@extend %text-size-adjust; 	
+	line-height: 100%;
+}
+html {
+	@extend %text-size-adjust;
+	@extend %text-family;
+	@extend %margin-padding;
+	-webkit-font-smoothing: antialiased;
+}
+body {
+	width: 100%;
+	@extend %text-size-adjust;
+	@extend %margin-padding;
+	height: 100% !important;
+	@extend %text-family;
+}
+
+table {
+	border-collapse:collapse;
+	padding:0;
+	@extend %rl-space;
+	@extend %line-height-rule;
+	@extend %text-family;
+	td {
+		border-collapse: collapse;
+		border-spacing: 0;
+		border: 0 none;
+		font-size:0px; 
+		line-height: 0px; 
+		-mso-ansi-font-size:0px; 
+		-mso-text-raise: 0px;
+		@extend %line-height-rule;				
+		@extend %rl-space;
+		@extend %text-family;
+		
+	}
+}
+
+
+
+.ReadMsgBody {width: 100%;}
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td
+{line-height: 100%;}
+
+p{@extend %margin-padding;}
+h1,h2,h3,h4,h5,h6{@extend %margin-padding;}
+img {
+	display: block;
+	border: 0 none;
+	outline: none;
+	text-decoration: none;
+	line-height: 100%;
+	-ms-interpolation-mode: bicubic;
+	height: auto;
+
+
+} 
+
+a[x-apple-data-detectors] {
+	border-bottom: 0 !important;
+	cursor: default !important;
+	color: inherit !important;
+	text-decoration: none !important;
+	font-size: inherit !important;
+	font-family: inherit !important;
+	font-weight: inherit !important;
+	line-height: inherit !important;
+}
+a { outline: 0; text-decoration: none !important; }
+a, a:active, a:link, a:visited { color: #000000; }
+a img { border: none; }
+a.phone { text-decoration: none; color: #000001 !important; pointer-events: auto; cursor: default; }
+.blueLinks a { color: inherit !important; text-decoration: none !important; }

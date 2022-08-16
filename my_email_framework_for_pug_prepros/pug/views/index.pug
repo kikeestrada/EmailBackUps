@@ -1,0 +1,8 @@
+extends ../templates/basicEmailTemplate
+append config
+	-var currentPage = "Home Page"
+	-var content = "Content Text"
+	-var tittle = "Email Template Customer"
+	-var description = "Description Text"
+block emailBody
+	include ../components/components

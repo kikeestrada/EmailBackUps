@@ -1,0 +1,30 @@
+//-======================================================================================================================
+//- Basic Image
+mixin emailImage(imgUrl,imgExt, imgAlt, imgTitle, imgClasss, imgWidth, imgHeight)
+	img(src=`img/${imgUrl}.${imgExt}` , alt=`${imgAlt}`, title=`${imgTitle}`, class=`${imgClasss}`,  width=`${imgWidth}`, height=`${imgHeight}`, border="0", style="display:block")
+//- use
+//- +emailImage('mane','ext', 'alt image', 'title image', 'class', 'width', 'heigth')
+
+//-======================================================================================================================
+//- Images
+mixin linkImage(imgLink, imgUrl,imgExt, imgAlt, imgTitle, imgClasss, imgWidth, imgHeight)
+	a(href=`${imgLink}`, target='_blank')
+		img(src=`img/${imgUrl}.${imgExt}` , alt=`${imgAlt}`, title=`${imgTitle}`, class=`${imgClasss}`,  width=`${imgWidth}`, height=`${imgHeight}`, border="0", style="display:block")
+//- use
+//- +linkImage('link', 'name Image','ext', 'alt image', 'title image', 'class', 'width', 'heigth')
+
+
+//-======================================================================================================================
+//- Hero Image Container
+mixin heroImage(imgLink, imgUrl,imgExt, imgAlt, imgTitle, imgClasss, imgWidth, imgHeight)
+	table(class='contenttable', width='600', border='0', cellpadding='0', cellspacing='0', align='center')
+		tr
+			td(align='center')
+				a(href=`${imgLink}`, target='_blank')
+					img(src=`img/${imgUrl}.${imgExt}` , alt=`${imgAlt}`, title=`${imgTitle}`, class=`${imgClasss}`,  width=`${imgWidth}`, height=`${imgHeight}`, border="0", style="display:block")
+
+//-======================================================================================================================
+mixin imgSpacer(imgWidth, imgHeight, spacerClass)
+	img(src='img/spacer.gif' , alt='spacer', width=`${imgWidth}`, height=`${imgHeight}`, class=`${spacerClass}`, border="0", style="display:block")
+//- use
+//- +imgSpacer('imgWidth', 'imgHeight', 'no-class')
